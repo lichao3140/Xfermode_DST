@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="2">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/rounddstinbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="圆角"/>
+
+            <Button
+                android:id="@+id/invertdstinbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="倒影图像"/>
+
+            <Button
+                android:id="@+id/lightbookview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="书架"/>
+
+            <Button
+                android:id="@+id/eraserview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="橡皮擦" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/irregularwavebtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="wave"/>
+
+            <Button
+                android:id="@+id/heartbitbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="心电图"/>
+
+            <Button
+                android:id="@+id/twitterview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="小鸟"/>
+
+            <Button
+                android:id="@+id/guaguaview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="刮刮卡"/>
+        </TableRow>
+    </TableLayout>
+
+    <com.lqh.lichao.xfermode_dst.RoundImageView_DSTIN
+        android:id="@+id/roundimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.lqh.lichao.xfermode_dst.InvertedImageView_DSTIN
+        android:id="@+id/invertimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.lqh.lichao.xfermode_dst.IrregularWaveView_DSTIN
+        android:id="@+id/irregularwaveview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.lqh.lichao.xfermode_dst.HeartMap_DSTIN
+        android:id="@+id/heartbitview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.lqh.lichao.xfermode_dst.LightBookView_LIGHTEN
+        android:id="@+id/lightbookview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.lqh.lichao.xfermode_dst.TwitterView_MULTIPLY
+        android:id="@+id/twitterview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.lqh.lichao.xfermode_dst.EraserView_SRCOUT
+        android:id="@+id/eraserview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.lqh.lichao.xfermode_dst.GuaGuaCardView_SRCOUT
+        android:id="@+id/guaguaview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+</LinearLayout>
